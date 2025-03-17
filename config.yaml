@@ -12,13 +12,15 @@
 # This option supports custom types so lessons can be branded
 # and themed with your own logo and alt-text (see `carpentry_description`)
 # See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
-carpentry: 'incubator'
+carpentry: 'datacite-logo'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+carpentry_description: 'This workshop will guide participants on using the DataCite REST API to work with DataCite DOI metadata. Participants will learn how to:
+Retrieve DOI metadata: Participants will learn how to use the DataCite REST API to search DOIs in the DataCite Metadata Store, including how to construct queries, apply filters, and retrieve a complete list of results.
+Create DOIs with rich metadata: Participants will try out DOI registration in the DataCite test system and learn how to update DOI metadata, taking full advantage of the DataCite Metadata Schema’s capabilities.'
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'DataCite API Training' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~ # FIXME
@@ -40,7 +42,7 @@ source: 'https://github.com/carpentries/workbench-template-md' # FIXME
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org' # FIXME
+contact: 'support@datacite.org' # FIXME
 
 # Navigation ------------------------------------------------
 #
@@ -67,19 +69,21 @@ contact: 'team@carpentries.org' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- Part 1: Retrieve DOI Metadata
+- Part 2: Create DOIs with Rich Metadata
 
 # Information for Learners
-learners: 
+learners: 'In this workshop, participants will learn how to leverage the DataCite REST API to discover resources with DataCite DOIs and to register DOIs with rich metadata. The facilitators will use Postman for API request demonstrations, guiding participants through a library of requests that can be tailored for different use cases. The workshop will be organized into two parts, followed by time for questions and hands-on support with API requests.'
 
 # Information for Instructors
-instructors: 
+instructors: 'The proposed session length is 3 hours (half day). The facilitators can accommodate a maximum of 30 attendees.'
 
 # Learner Profiles
-profiles: 
+profiles: 'This workshop is targeted at librarians, developers, and metadata enthusiasts who are interested in working with DataCite DOI metadata.'
 
 # Customisation ---------------------------------------------
 #
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
-
+‘varnish: selgebali/varnish
 
